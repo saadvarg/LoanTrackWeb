@@ -1,12 +1,13 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { useState, useEffect } from 'react';
+import { imageUrl } from '../lib/assets';
 
 const screenshots = [
-  '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.04-1.png',
-  '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.15-1.png',
-  '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.26-1.png',
-  '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.36-1.png',
-  '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.26.04-1.png'
+  imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.04-1.png'),
+  imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.15-1.png'),
+  imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.26-1.png'),
+  imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.36-1.png'),
+  imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.26.04-1.png')
 ];
 
 export function PortfolioPhoneMockup() {

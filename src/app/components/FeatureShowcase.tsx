@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { useState } from 'react';
 import { BarChart3, Brain, Calculator, Users, TrendingUp, Shield, ChevronRight } from 'lucide-react';
+import { imageUrl } from '../lib/assets';
 
 interface Feature {
   id: string;
@@ -21,7 +22,7 @@ const features: Feature[] = [
     title: 'Real-Time Dashboard',
     description: 'Track leads, pipeline value, and conversion rates with live analytics',
     detailedDescription: 'The dashboard provides a comprehensive overview of your entire sales pipeline at a glance. Monitor total leads in progress, track your pipeline value in real-time, calculate average loan amounts, and measure conversion rates. Features personalized greetings, role-based views for Super Admins, and top priority leads with risk assessment tags. The dashboard updates instantly as team members make changes, ensuring everyone has access to the latest data.',
-    screenshot: '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.04-1.png',
+    screenshot: imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.04-1.png'),
     color: 'from-blue-600 to-cyan-600',
     stats: [
       { label: 'Total Leads', value: '2' },
@@ -42,7 +43,7 @@ const features: Feature[] = [
     title: 'Advanced Analytics',
     description: 'Visualize lead status distribution and pipeline health with interactive charts',
     detailedDescription: 'Powerful analytics tools transform your data into actionable insights. View lead status distribution across New, Contacted, Qualified, Closed, and Lost stages with interactive bar charts. Analyze pipeline composition with pie charts showing percentage breakdowns. Track closed leads separately and monitor conversion funnels. The analytics dashboard helps identify bottlenecks, predict trends, and optimize your sales process with data-driven decisions.',
-    screenshot: '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.15-1.png',
+    screenshot: imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.15-1.png'),
     color: 'from-purple-600 to-pink-600',
     stats: [
       { label: 'New Leads', value: '1' },
@@ -63,7 +64,7 @@ const features: Feature[] = [
     title: 'AI-Powered Scoring',
     description: 'Intelligent risk assessment with automated lead prioritization',
     detailedDescription: 'Revolutionary AI engine analyzes lead data to generate risk scores from 0-100, automatically categorizing leads as Low, Medium, or High Risk. The Smart Action Queue provides AI-generated recommendations like "Fast-track document collection" based on lead quality. View detailed scoring breakdowns, risk labels, and unlock AI-generated insights for next steps and follow-up messages. The system learns from your historical data to continuously improve accuracy.',
-    screenshot: '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.36-1.png',
+    screenshot: imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.36-1.png'),
     color: 'from-violet-600 to-purple-600',
     stats: [
       { label: 'Risk Score', value: '80/100' },
@@ -84,7 +85,7 @@ const features: Feature[] = [
     title: 'Loan Calculator',
     description: 'Quick calculations for monthly payments, rates, and term breakdowns',
     detailedDescription: 'Built-in financial calculator enables instant loan calculations without leaving the app. Input principal amount, interest rate, and term length to instantly calculate monthly payments. View detailed breakdowns showing principal amount, interest rate percentages, and loan term duration. Perfect for on-the-spot client consultations, proposal generation, and what-if scenario planning. Supports multiple currency formats and calculation methods.',
-    screenshot: '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.26.04-1.png',
+    screenshot: imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.26.04-1.png'),
     color: 'from-green-600 to-emerald-600',
     stats: [
       { label: 'Principal', value: 'MAD 60K' },
@@ -105,7 +106,7 @@ const features: Feature[] = [
     title: 'Team Management',
     description: 'Role-based access control for Super Admins, Agents, and team members',
     detailedDescription: 'Comprehensive team management system with granular role-based access control. Manage Super Admins with full system access, Agents with sales capabilities, and custom team members with specific permissions. View team member status (Active, Suspended), track team performance, and control data visibility per role. The admin panel provides complete oversight of user management, pending approvals, and team statistics.',
-    screenshot: '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.26.12-1.png',
+    screenshot: imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.26.12-1.png'),
     color: 'from-amber-600 to-orange-600',
     stats: [
       { label: 'Super Admins', value: '2' },
@@ -126,7 +127,7 @@ const features: Feature[] = [
     title: 'Lead Details',
     description: 'Comprehensive lead profiles with financial data and status tracking',
     detailedDescription: 'Detailed lead profiles capture every critical piece of information in one place. Store contact details (name, email, phone), track lead status (New, Contacted, Qualified, Closed, Lost), and maintain comprehensive financial records including loan amounts, income, debt, credit scores, and employment status. Edit information on-the-fly, save changes instantly, and maintain a complete audit trail of all modifications. Secure data storage ensures client information remains protected.',
-    screenshot: '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.26-1.png',
+    screenshot: imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.26-1.png'),
     color: 'from-red-600 to-rose-600',
     stats: [
       { label: 'Loan Amount', value: 'MAD 300K' },

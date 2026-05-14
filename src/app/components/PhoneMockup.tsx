@@ -6,40 +6,41 @@ import { AnalyticsScreen } from './interactive-screens/AnalyticsScreen.tsx';
 import { LeadDetailsScreen } from './interactive-screens/LeadDetailsScreen.tsx';
 import { AIScoringScreen } from './interactive-screens/AIScoringScreen.tsx';
 import { CalculatorScreen } from './interactive-screens/CalculatorScreen.tsx';
+import { imageUrl } from '../lib/assets';
 
 const screens = [
   {
     title: 'Dashboard Overview',
     component: DashboardScreen,
-    screenshot: '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.04-1.png'
+    screenshot: imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.04-1.png')
   },
   {
     title: 'Lead Analytics',
     component: AnalyticsScreen,
-    screenshot: '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.15-1.png'
+    screenshot: imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.15-1.png')
   },
   {
     title: 'Lead Details',
     component: LeadDetailsScreen,
-    screenshot: '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.26-1.png'
+    screenshot: imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.26-1.png')
   },
   {
     title: 'AI-Powered Scoring',
     component: AIScoringScreen,
-    screenshot: '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.36-1.png'
+    screenshot: imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.25.36-1.png')
   },
   {
     title: 'Loan Calculator',
     component: CalculatorScreen,
-    screenshot: '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.26.04-1.png'
+    screenshot: imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.26.04-1.png')
   },
   {
     title: 'Admin Panel',
-    screenshot: '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.26.12-1.png'
+    screenshot: imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.26.12-1.png')
   },
   {
     title: 'User Profile',
-    screenshot: '/src/imports/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.26.17-1.png'
+    screenshot: imageUrl('Simulator_Screenshot_-_iPhone_17_Pro_-_2026-05-07_at_13.26.17-1.png')
   }
 ];
 
